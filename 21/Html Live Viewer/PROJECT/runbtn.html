@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      function code() {
+        let code = document.getElementById("code").value;
+        let hh = document.getElementById("view").contentWindow.document;
+        hh.open();
+        hh.write(code);
+        hh.close();
+      }
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #container {
+        height: 800px;
+        width: 100%;
+        background-color: whitesmoke;
+      }
+      #div1 {
+        height: 800px;
+        width: 50%;
+        background-color: yellow;
+        float: left;
+        position: relative;
+      }
+      #div2 {
+        height: 800px;
+        width: 50%;
+        background-color: yellowgreen;
+        float: right;
+      }
+      #code {
+        height: 800px;
+        width: 100%;
+        font-size: 25px;
+      }
+      #view {
+        height: 100%;
+        width: 100%;
+      }
+      #runbtn {
+        height: 50px;
+        width: 150px;
+        background-color: whitesmoke;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="div1">
+        <button onclick="code()" id="runbtn">Run</button>
+
+        <textarea
+          name="code"
+          id="code"
+          placeholder="Enter Your Code"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div id="div2">
+        <iframe id="view"></iframe>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </body>
+</html>

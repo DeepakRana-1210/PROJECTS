@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 60px;
+        width: 100%;
+        background-color: aliceblue;
+      }
+      nav {
+        height: 60px;
+        width: 100%;
+        background-color: aqua;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin-right: 100px;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1% 2%;
+        background-color: blueviolet;
+        line-height: 3.7;
+        border-radius: 5px;
+        font-weight: 700;
+        color: whitesmoke;
+      }
+      nav ul li a:hover {
+        background-color: yellow;
+        color: black;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        background-color: white;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        display: none;
+        padding: 2%;
+      }
+      h1 {
+        line-height: 2.5;
+        text-align: center;
+        font-size: 30px;
+      }
+      .text {
+        padding: 1%;
+        background-color: rgba(255, 0, 0, 0.6);
+        display: none;
+      }
+      .btn {
+        padding: 1% 2%;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a onclick="hello1()" id="he1" href="#">Html</a></li>
+          <li><a onclick="hello2()" id="he2" href="#">Css</a></li>
+          <li><a onclick="hello3()" id="he3" href="#">JavaScript</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="div1" class="container">
+      <h1>
+        What is HTML? HTML stands for Hyper Text Markup Language HTML is the
+        standard markup language for creating Web pages HTML describes the
+        structure of a Web page HTML consists of a series of elements HTML
+        elements tell the browser how to display the content HTML elements label
+        pieces of content such as "this is a heading", "this is a paragraph",
+        "this is a link", etc.
+      </h1>
+      <center>
+        <button class="btn" onclick="text1()">HTML DEFINATION</button
+        ><br /><br /><br />
+      </center>
+      <div id="the1" class="text">
+        <h1>
+          Hypertext Markup Language is the standard markup language for
+          documents designed to be displayed in a web browser. It can be
+          assisted by technologies such as Cascading Style Sheets and scripting
+          languages such as JavaScript.
+        </h1>
+      </div>
+    </div>
+    <div id="div2" class="container">
+      <h1>
+        What is CSS? CSS stands for Cascading Style Sheets CSS describes how
+        HTML elements are to be displayed on screen, paper, or in other media
+        CSS saves a lot of work. It can control the layout of multiple web pages
+        all at once External stylesheets are stored in CSS files
+      </h1>
+      <center>
+        <button class="btn" onclick="text2()">CSS DEFINATION</button
+        ><br /><br /><br />
+      </center>
+      <div id="the2" class="text">
+        <h1>
+          Cascading Style Sheets is a style sheet language used for describing
+          the presentation of a document written in a markup language such as
+          HTML. CSS is a cornerstone technology of the World Wide Web, alongside
+          HTML and JavaScript.
+        </h1>
+      </div>
+    </div>
+
+    <div id="div3" class="container">
+      <h1>
+        JavaScript is the world's most popular programming language. JavaScript
+        is the programming language of the Web. JavaScript is easy to learn.
+        This tutorial will teach you JavaScript from basic to advanced.
+      </h1>
+      <center>
+        <button class="btn" onclick="text3()">JAVASCRIPT DINFINATION</button
+        ><br /><br /><br />
+      </center>
+
+      <div id="the3" class="text">
+        <h1>
+          JavaScript, often abbreviated as JS, is a programming language that
+          conforms to the ECMAScript specification. JavaScript is high-level,
+          often just-in-time compiled, and multi-paradigm. It has curly-bracket
+          syntax, dynamic typing, prototype-based object-orientation, and
+          first-class functions.
+        </h1>
+      </div>
+    </div>
+    <script>
+      function hello1() {
+        document.getElementById("div1").style.display = "block";
+        document.getElementById("div2").style.display = "none";
+        document.getElementById("div3").style.display = "none";
+      }
+      function hello2() {
+        document.getElementById("div2").style.display = "block";
+        document.getElementById("div1").style.display = "none";
+        document.getElementById("div3").style.display = "none";
+      }
+      function hello3() {
+        document.getElementById("div3").style.display = "block";
+        document.getElementById("div1").style.display = "none";
+        document.getElementById("div2").style.display = "none";
+      }
+      function text1() {
+        document.getElementById("the1").style.display = "block";
+        document.getElementById("the2").style.display = "none";
+        document.getElementById("the3").style.display = "none";
+      }
+      function text2() {
+        document.getElementById("the2").style.display = "block";
+        document.getElementById("the1").style.display = "none";
+        document.getElementById("the3").style.display = "none";
+      }
+      function text3() {
+        document.getElementById("the3").style.display = "block";
+        document.getElementById("the1").style.display = "none";
+        document.getElementById("the2").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

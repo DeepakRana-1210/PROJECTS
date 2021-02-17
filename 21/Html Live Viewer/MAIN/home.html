@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#codehere").on("keyup", function () {
+          let monster = $("#codehere").val();
+          $(".div2").html(monster);
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+      .maindiv {
+        height: 700px;
+        width: 100%;
+        background-color: lightblue;
+      }
+      .div1 {
+        height: 100%;
+        width: 50%;
+        background-color: lightcoral;
+        float: left;
+      }
+      .div2 {
+        height: 100%;
+        width: 50%;
+        background-color: lightcyan;
+        float: right;
+      }
+      .clr {
+        clear: both;
+      }
+      #codehere {
+        height: 105%;
+        width: 105%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <div class="div1">
+        <textarea
+          name=""
+          id="codehere"
+          oninput="hello()"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="div2"></div>
+      <div class="clr"></div>
+    </div>
+  </body>
+</html>

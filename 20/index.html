@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $(".container").animate({
+            height: "300px",
+            width: "300px",
+          });
+          $(".container").animate({ left: "300px" });
+          $(".container").animate({ right: "300px" });
+          $(".container").animate({ top: "300px" });
+        });
+      });
+    </script>
+    <style>
+      .container {
+        height: 200px;
+        width: 200px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        position: absolute;
+      }
+      #btn {
+        position: absolute;
+        top: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <br />
+    <button id="btn">ANIMATE</button>
+  </body>
+</html>

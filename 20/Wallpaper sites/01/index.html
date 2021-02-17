@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        height: 60px;
+        width: 100%;
+        background-color: pink;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .box {
+        height: 40px;
+        width: 24.25%;
+        float: left;
+        margin-top: 5px;
+        text-align: center;
+      }
+      .bg1 {
+        float: left;
+      }
+      .bg2 {
+        float: left;
+        margin-left: 1%;
+      }
+      .bg3 {
+        float: left;
+        margin-left: 1%;
+      }
+      .bg4 {
+        float: right;
+      }
+      .men,
+      .women,
+      .baby,
+      .awesome {
+        height: 400px;
+        width: 100%;
+        background-color: lightblue;
+        display: flex;
+        display: none;
+      }
+
+      .hellbox {
+        height: 350px;
+        width: 25%;
+        background-color: red;
+        margin: 1%;
+      }
+      .box a {
+        text-decoration: none;
+        background-color: red;
+        padding: 2% 42%;
+        line-height: 2.5;
+        font-size: 20px;
+        font-weight: 700;
+        color: whitesmoke;
+      }
+      .box a:hover {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box bg1"><a href="#">Men</a></div>
+      <div class="box bg2"><a href="#">Women</a></div>
+      <div class="box bg3"><a href="#">Baby</a></div>
+      <div class="box bg4"><a href="#">Awesome</a></div>
+    </div>
+
+    <div class="men">
+      <div class="hellbox">
+        <img src="Images/1.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/2.webp" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/3.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/4.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div class="men">
+      <div class="hellbox">
+        <img src="Images/1.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/2.webp" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/3.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/4.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div class="men">
+      <div class="hellbox">
+        <img src="Images/1.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/2.webp" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/3.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/4.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+
+    <div class="women">
+      <div class="hellbox">
+        <img src="Images/5.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/6.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/7.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/8.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div class="women">
+      <div class="hellbox">
+        <img src="Images/5.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/6.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/7.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/8.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div class="women">
+      <div class="hellbox">
+        <img src="Images/5.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/6.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/7.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/8.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+
+    <div class="baby">
+      <div class="hellbox">
+        <img src="Images/9.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/10.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/11.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/12.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div class="baby">
+      <div class="hellbox">
+        <img src="Images/9.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/10.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/11.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/12.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div class="baby">
+      <div class="hellbox">
+        <img src="Images/9.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/10.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/11.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/12.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+
+    <div class="awesome">
+      <div class="hellbox">
+        <img src="Images/13.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/14.png" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/15.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/16.png" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div class="awesome">
+      <div class="hellbox">
+        <img src="Images/13.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/14.png" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/15.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/16.png" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div class="awesome">
+      <div class="hellbox">
+        <img src="Images/13.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/14.png" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/15.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="hellbox">
+        <img src="Images/16.png" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".main").click(function () {
+          $(".box").show(200);
+        });
+        $(".bg1").click(function () {
+          $(".men").slideToggle(500);
+          $(".men").css({ display: "flex" });
+          $(".women").hide();
+          $(".baby").hide();
+          $(".awesome").hide();
+        });
+        $(".bg2").click(function () {
+          $(".women").slideToggle(500);
+          $(".women").css({ display: "flex" });
+          $(".men").hide();
+          $(".baby").hide();
+          $(".awesome").hide();
+        });
+        $(".bg3").click(function () {
+          $(".baby").slideToggle(500);
+          $(".baby").css({ display: "flex" });
+          $(".men").hide();
+          $(".women").hide();
+          $(".awesome").hide();
+        });
+        $(".bg4").click(function () {
+          $(".awesome").slideToggle(500);
+          $(".awesome").css({ display: "flex" });
+          $(".men").hide();
+          $(".women").hide();
+          $(".baby").hide();
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#code").on("keyup", function () {
+          let monster = $("#code").val();
+          $("#preview").html(monster);
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .container {
+        height: 800px;
+        width: 100%;
+        background-color: whitesmoke;
+      }
+      .div1 {
+        height: 100%;
+        width: 50%;
+        background-color: lightblue;
+        float: left;
+        position: relative;
+      }
+      .div2 {
+        height: 100%;
+        width: 50%;
+        background-color: lightcoral;
+        float: right;
+      }
+      .clr {
+        clear: both;
+      }
+      #code {
+        height: 105%;
+        width: 105%;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div1">
+        <textarea name="" id="code" cols="30" rows="10"></textarea>
+      </div>
+      <div class="div2" id="preview"></div>
+      <div class="clr"></div>
+    </div>
+  </body>
+</html>
