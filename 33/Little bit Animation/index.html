@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".main").hover(function () {
+          $(".box1").css({
+            "margin-left": "4%",
+            "background-color": "whitesmoke",
+            transition: "2s",
+          });
+          $(".box2").css({
+            "margin-right": "4%",
+            "background-color": "whitesmoke",
+            transition: "2s",
+          });
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .hell {
+        margin-left: 10%;
+        background-color: pink;
+      }
+      .box1 {
+        height: 400px;
+        margin-left: -10%;
+        width: 45%;
+        padding: 5%;
+        text-align: justify;
+
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .box2 {
+        height: 400px;
+        width: 45%;
+        margin-right: -10%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        padding: 5%;
+        text-align: justify;
+      }
+      .main {
+        height: 500px;
+        width: 100%;
+        background-color: rgb(226, 221, 221);
+        padding-top: 50px;
+      }
+      article {
+        padding: 5%;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <section class="box1 fl">
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A quaerat
+          natus sequi illo, reprehenderit adipisci non vitae debitis quos cum
+          sit voluptatibus fugit facere doloremque omnis quisquam nulla rem
+          dolores!
+        </article>
+      </section>
+      <section class="box2 fr">
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A quaerat
+          natus sequi illo, reprehenderit adipisci non vitae debitis quos cum
+          sit voluptatibus fugit facere doloremque omnis quisquam nulla rem
+          dolores!
+        </article>
+      </section>
+    </section>
+  </body>
+</html>
