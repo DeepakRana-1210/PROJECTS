@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url(Images/hel.jpg);
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .box {
+        height: 500px;
+        width: 60%;
+        margin: auto;
+        background-color: white;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        margin-top: 50px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+      .part {
+        height: 450px;
+        width: 50%;
+        margin-top: 25px;
+        line-height: 1.4;
+        text-align: justify;
+        background-image: url(Images/ii.jpg);
+        color: whitesmoke;
+        border-radius: 10px;
+      }
+      .part h2,
+      h3 {
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px red;
+      }
+      .list {
+        margin-left: 25px;
+        margin-top: 30px;
+      }
+      .btn {
+        padding: 10px 10px 10px 10px;
+        margin: 30px 20px;
+        border-radius: 5px;
+        background-image: url(Images/hel.jpg);
+      }
+      .btn:hover {
+        background-image: url(Images/ii.jpg);
+        color: whitesmoke;
+        font-weight: 700;
+        box-shadow: 3px 3px 2px 2px red;
+      }
+      .hello {
+        height: 70px;
+        width: 70px;
+        margin-left: 5%;
+        margin-top: 50px;
+      }
+      .imm {
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="part fl">
+        <img src="Images/new1.jpg" alt="" width="100%" height="100%" />
+      </div>
+      <div class="part fr">
+        <br />
+        <h2>Apple Headfones</h2>
+        <h3>Heighlights</h3>
+        <ul class="list">
+          <li>32 GB ROM</li>
+          <li>25.91 cm (10.2 inch) Full HD Display</li>
+          <li>8 MP Primary Camera | 1.2 MP Front</li>
+          <li>iPadOS 13.1 | Battery: Lithium Polymer</li>
+          <li>
+            Processor: A10 Fusion Chip (64-bit Architecture) <br />with Embedded
+            M10 Co-processor
+          </li>
+        </ul>
+        <div class="hello fl">
+          <img
+            src="Images/11.jpeg"
+            alt=""
+            height="100%"
+            width="100%"
+            class="imm"
+          />
+        </div>
+        <div class="hello fl">
+          <img
+            src="Images/22.jpg"
+            alt=""
+            height="100%"
+            width="100%"
+            class="imm"
+          />
+        </div>
+        <div class="hello fl">
+          <img
+            src="Images/33.jpg"
+            alt=""
+            height="100%"
+            width="100%"
+            class="imm"
+          />
+        </div>
+        <div class="clr"></div>
+        <button class="btn">ADD TO CART</button>
+        <button class="btn">WISHLIST</button>
+      </div>
+    </div>
+  </body>
+</html>

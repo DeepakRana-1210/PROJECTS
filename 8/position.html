@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .clr {
+        clear: both;
+      }
+      /*********************first box start***********************/
+      .first {
+        height: 350px;
+        width: 350px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        position: relative;
+        margin: auto;
+      }
+      .firstsub {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      /*********************first box end***********************/
+      /*********************second box start***********************/
+      .second {
+        height: 100px;
+        width: 350px;
+        background-color: red;
+        position: relative;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 0% 0% 20% 20%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .secondsub {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        border-radius: 0% 0% 40% 40%;
+      }
+      /*********************second box end***********************/
+      /*********************third box start***********************/
+      .third {
+        height: 100px;
+        width: 350px;
+        background-color: red;
+        position: relative;
+        margin: auto;
+        margin-top: 20px;
+        margin-top: 260px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .thirdsub {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+      }
+      /*********************third box end***********************/
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      <div class="firstsub"></div>
+    </div>
+    <br /><br />
+    <hr />
+    <br /><br />
+    <div class="second">
+      <div class="secondsub"></div>
+    </div>
+    <hr />
+
+    <div class="third">
+      <div class="thirdsub"></div>
+    </div>
+  </body>
+</html>

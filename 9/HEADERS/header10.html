@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        height: 80px;
+        width: 100%;
+        background-color: aqua;
+        position: relative;
+      }
+      .logo {
+        height: 80px;
+        width: 200px;
+        background-color: blueviolet;
+        position: absolute;
+        top: 40px;
+        left: 2.5%;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .nav {
+        position: absolute;
+        right: 30px;
+        width: 70%;
+        text-align: right;
+        top: 60px;
+      }
+      .nav ul {
+        list-style-type: none;
+      }
+      .nav ul li {
+        display: inline;
+        margin-left: 30px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        border-bottom: 4px solid green;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        line-height: 2.3;
+        font-weight: 700;
+        padding: 0.8% 2%;
+        background-color: yellow;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <div class="nav">
+        <ul>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">Hello</a></li>
+          <li><a href="#">Hello</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

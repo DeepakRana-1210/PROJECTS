@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .first {
+        height: 100px;
+        width: 40%;
+        margin: auto;
+        background-color: aqua;
+        position: relative;
+        margin-top: 30px;
+        border-radius: 0px 0px 50px 50px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .first1 {
+        height: 350px;
+        width: 45%;
+        background-color: blueviolet;
+        position: absolute;
+        border-radius: 0px 0px 30px 30px;
+        left: 25%;
+        top: 50px;
+        position: relative;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .second {
+        height: 80px;
+        width: 30%;
+        position: absolute;
+        left: 35%;
+        top: -30px;
+        border-radius: 50%;
+        background-image: url(Images/heart-icon-y1k.png);
+        background-size: 100% 100%;
+      }
+      .first1 p {
+        text-align: center;
+        line-height: 2;
+      }
+      .heman {
+        width: 80%;
+        height: 40px;
+        text-align: center;
+      }
+      .hee {
+        height: 100px;
+      }
+      #btn {
+        width: 40%;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      <div class="first1">
+        <div class="second"></div>
+        <div class="hee"></div>
+        <form method="POST" action="">
+          <p>
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="heman"
+              required
+              name="email"
+            />
+          </p>
+          <br />
+          <p>
+            <input
+              type="password"
+              name="pass"
+              id="password"
+              placeholder="Enter Your Password"
+              class="heman"
+              required
+            />
+          </p>
+          <br />
+          <p><input type="submit" name="submit" value="Login" id="btn" /></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
