@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".vv1").click(function () {
+          $(".vid1").toggle();
+        });
+        $(".vv2").click(function () {
+          $(".vid2").toggle();
+        });
+        $(".vv3").click(function () {
+          $(".vid3").toggle();
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        position: relative;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      header,
+      section,
+      aside,
+      footer {
+        display: block;
+      }
+      header {
+        height: 100px;
+        width: 100%;
+        background-color: lightblue;
+      }
+      .box {
+        height: 400px;
+        width: 32.66%;
+        position: relative;
+      }
+      .hoverdiv {
+        position: absolute;
+        top: 140px;
+        left: 40%;
+        display: none;
+      }
+      .box:hover .hoverdiv {
+        display: block;
+      }
+      .mainplayer {
+        position: absolute;
+        top: 0px;
+        height: 700px;
+        background-color: yellow;
+        display: none;
+      }
+      .thisdiv {
+        height: 500px;
+        width: 50%;
+        background-color: lightblue;
+        border: 2px solid red;
+      }
+      .thisdiv p {
+        padding: 5%;
+        line-height: 1.6;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <section>
+      <img src="Images/4.jpg" height="400px" width="100%" alt="" />
+    </section>
+    <section>
+      <div class="thisdiv fl">
+        <video
+          src="video/Eminem - Godzilla ft. Juice WRLD (Directed by Cole Bennett).mp4"
+          height="100%"
+          width="100%"
+          controls
+        ></video>
+      </div>
+      <div class="thisdiv fr">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+          quas eum saepe fugiat incidunt? Ea fugit nostrum accusamus numquam
+          obcaecati incidunt, facilis consequatur commodi aperiam quisquam
+          necessitatibus itaque, veritatis saepe. Rerum praesentium sed magni
+          facilis blanditiis labore qui, iusto adipisci similique repudiandae
+          consequatur corporis eveniet possimus eum velit, perferendis veniam
+          doloribus quae. Adipisci, delectus temporibus aut recusandae quaerat
+          veritatis provident. Soluta tempora eius necessitatibus? Ab veniam,
+          praesentium accusantium voluptatum cupiditate voluptatibus ad placeat
+          eligendi incidunt temporibus dicta libero aut natus! Incidunt,
+          doloribus? Accusamus, illum! Repudiandae officia molestiae asperiores
+          minus quidem! Recusandae, a aspernatur iste repellendus pariatur cum
+          vero autem soluta odio est praesentium neque quasi, non deleniti sequi
+          earum voluptas ut exercitationem aliquam veritatis officia. Quo
+          consectetur est provident quisquam! Sunt quaerat recusandae
+          accusantium, mollitia ullam magni ipsum eveniet molestiae,
+          perferendis, quas numquam labore minima cupiditate impedit minus.
+          Fugiat nam iusto deleniti, officiis odio eaque vero ad esse quos enim!
+        </p>
+      </div>
+      <div class="clr"></div>
+    </section>
+    <section>
+      <div class="box vv1 fl">
+        <img src="Images/1.jpg" height="100%" width="100%" alt="" />
+        <div class="hoverdiv">
+          <img src="Images/hover.png" height="100px" width="100px" alt="" />
+        </div>
+      </div>
+      <div class="box vv2 new">
+        <img src="Images/2.webp" height="100%" width="100%" alt="" />
+        <div class="hoverdiv">
+          <img src="Images/hover.png" height="100px" width="100px" alt="" />
+        </div>
+      </div>
+      <div class="box vv3 fr">
+        <img src="Images/3.jpg" height="100%" width="100%" alt="" />
+        <div class="hoverdiv">
+          <img src="Images/hover.png" height="100px" width="100px" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="mainplayer vid1">
+      <video
+        src="Video/Eminem - Godzilla ft. Juice WRLD (Directed by Cole Bennett).mp4
+        "
+        controls
+        height="100%"
+        width="100%"
+      ></video>
+    </div>
+    <div class="mainplayer vid2">
+      <video
+        src="video/Eminem - Rap God (Explicit) [Official Video].mp4"
+        controls
+        height="100%"
+        width="100%"
+      ></video>
+    </div>
+    <div class="mainplayer vid3">
+      <video
+        src="video/Shawn Mendes - Aftertaste.mp4"
+        controls
+        height="100%"
+        width="100%"
+      ></video>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <canvas
+        height="500px"
+        id="canvas"
+        width="500px"
+        style="margin-left: 30%; margin-top: 5%"
+      ></canvas>
+    </section>
+    <script>
+      /*************square********************/
+      let opl = document.getElementById("canvas");
+      let mainn = opl.getContext("2d");
+      mainn.moveTo(0, 0);
+      mainn.lineTo(0, 500);
+      mainn.lineTo(500, 500);
+      mainn.lineTo(500, 0);
+      mainn.lineTo(0, 0);
+      mainn.stroke();
+      /*********circle****************/
+      let data = document.getElementById("canvas");
+      let cir = data.getContext("2d");
+      cir.beginPath();
+      cir.arc(250, 250, 200, 0, 2 * Math.PI);
+      cir.stroke();
+      /********************eye*****************/
+      let eye = document.getElementById("canvas");
+      let eyeone = eye.getContext("2d");
+      eyeone.beginPath();
+      eyeone.arc(160, 180, 50, 0, 2 * Math.PI);
+      eyeone.stroke();
+      let eyet = document.getElementById("canvas");
+      let eyeonet = eyet.getContext("2d");
+      eyeone.beginPath();
+      eyeonet.arc(330, 180, 50, 0, 2 * Math.PI);
+      eyeonet.stroke();
+      /**********************nose******************/
+      let nose = document.getElementById("canvas");
+      let sas = nose.getContext("2d");
+      sas.beginPath();
+      sas.arc(250, 250, 20, 0, 2 * Math.PI);
+      sas.stroke();
+      /***************line*************************/
+      let opl11 = document.getElementById("canvas");
+      let mainnv = opl11.getContext("2d");
+      mainnv.moveTo(250, 270);
+      mainnv.lineTo(250, 350);
+      mainnv.stroke();
+      /*******************beard***********************/
+      let line = document.getElementById("canvas");
+      let des = line.getContext("2d");
+      des.moveTo(230, 300);
+      des.lineTo(160, 280);
+      des.moveTo(230, 310);
+      des.lineTo(160, 310);
+      des.moveTo(340, 280);
+      des.lineTo(270, 300);
+      des.moveTo(340, 310);
+      des.lineTo(270, 310);
+      des.moveTo(270, 320);
+      des.lineTo(340, 340);
+      des.moveTo(160, 340);
+      des.lineTo(230, 320);
+      des.stroke();
+      /***********smile****************/
+      let sm = document.getElementById("canvas");
+      let smm = sm.getContext("2d");
+      smm.beginPath();
+      smm.arc(250, 410, 60, 9.4, 2 * Math.PI);
+      smm.stroke();
+      /*************bell**************/
+      let sma = document.getElementById("canvas");
+      let smma = sma.getContext("2d");
+      smma.beginPath();
+      smma.arc(250, 450, 20, 0, 2 * Math.PI);
+      smma.stroke();
+      let smas = document.getElementById("canvas");
+      let smmas = smas.getContext("2d");
+      smmas.beginPath();
+      smmas.arc(250, 465, 10, 0, 2 * Math.PI);
+      smmas.stroke();
+      /*******************main head**************/
+      let smf = document.getElementById("canvas");
+      let smmf = sm.getContext("2d");
+      smmf.beginPath();
+      smmf.arc(255, 320, 180, 9.3, 2 * Math.PI);
+      smmf.stroke();
+      /**************eye**************/
+      let hh = document.getElementById("canvas");
+      let hhh = hh.getContext("2d");
+      hhh.beginPath();
+      hhh.arc(160, 190, 35, 0, 2 * Math.PI);
+      hhh.stroke();
+      let hha = document.getElementById("canvas");
+      let hhha = hha.getContext("2d");
+      hhha.beginPath();
+      hhha.arc(330, 190, 35, 0, 2 * Math.PI);
+      hhha.stroke();
+    </script>
+  </body>
+</html>
