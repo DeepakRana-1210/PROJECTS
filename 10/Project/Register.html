@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-weight: 700;
+      }
+      .main {
+        height: 700px;
+        width: 80%;
+        background-color: rgb(238, 98, 98);
+        margin: auto;
+        margin-top: 160px;
+        position: relative;
+        border-radius: 10px 50px 50px 10px;
+      }
+      .circle {
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+        border-radius: 50%;
+        position: absolute;
+        left: -150px;
+        top: -150px;
+        background-image: url(Images/1.jpg);
+        background-size: 100% 100%;
+      }
+      .form {
+        height: 400px;
+        width: 50%;
+        background-color: rgb(87, 241, 87);
+        position: absolute;
+        right: 25%;
+        top: 25%;
+        text-align: center;
+        border-radius: 10px 50px 50px 10px;
+      }
+      .boox {
+        height: 50px;
+        width: 80%;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      #loginbtn {
+        height: 40px;
+        width: 40%;
+        background-color: rgb(238, 98, 98);
+        box-shadow: 3px 3px 15px 2px #ccc;
+      }
+      #loginbtn:hover {
+        color: red;
+        background-color: whitesmoke;
+      }
+      #loginbtnnn:hover {
+        color: red;
+        background-color: whitesmoke;
+      }
+      a {
+        text-decoration: none;
+      }
+      #loginbtnnn {
+        width: 30%;
+        height: 40px;
+        background-color: rgb(238, 98, 98);
+        box-shadow: 3px 3px 15px 2px #ccc;
+        color: red;
+      }
+      #link {
+        padding: 4.5% 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="circle"></div>
+      <div class="form">
+        <p>
+          <input
+            type="email"
+            name="email"
+            id=""
+            placeholder="Enter Your Email"
+            class="boox"
+          />
+        </p>
+        <p>
+          <input
+            type="password"
+            name="pass"
+            id=""
+            placeholder="Enter Your Password"
+            class="boox"
+          />
+        </p>
+        <p>
+          <input type="submit" value="Register" id="loginbtn" class="boox" />
+        </p>
+        <button class="boox" id="loginbtnnn">
+          <a id="link" href="Login.html">login Now</a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
