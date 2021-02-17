@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*****Main content*******/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+
+      /*************Header section start*****************/
+      .header {
+        height: 80px;
+        background-color: aqua;
+        text-align: center;
+      }
+      .header h1 {
+        padding-top: 20px;
+      }
+
+      /***************Nav section start***************/
+      .nav {
+        width: 19.2%;
+        height: 20px;
+        margin-top: 2px;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 12px;
+      }
+      .nav a {
+        text-decoration: none;
+        font-weight: 700;
+        text-shadow: tomato 1px 0px 1px;
+      }
+      .nav a:hover {
+        font-size: 18px;
+        color: darkblue;
+        text-shadow: tomato 1px 0px 1px;
+        transition: 0.2s;
+      }
+
+      /***************Asection start***************/
+      .asection {
+        height: 350px;
+        background-color: yellow;
+        margin-top: 10px;
+      }
+
+      /************cardsection start******************/
+      .cardsection {
+        height: 650px;
+        background-color: blueviolet;
+        margin-top: 10px;
+      }
+      .box1 {
+        width: 79%;
+      }
+      .box2 {
+        width: 20%;
+      }
+
+      /***********fooetr section start*******************/
+      .footer {
+        height: 80px;
+        background-color: chartreuse;
+        margin-top: 10px;
+        text-align: center;
+      }
+      .footer h1 {
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!---------------Header Section------------------------>
+    <div class="header"><h1>header</h1></div>
+    <!--------------------------------------->
+
+    <!---------------Nav Section------------------------>
+    <div class="nav fl"><a href="#">Home</a></div>
+    <div class="nav new"><a href="#">About</a></div>
+    <div class="nav new"><a href="#">Contact</a></div>
+    <div class="nav new"><a href="#">Portfolio</a></div>
+    <div class="nav fr"><a href="#">Links</a></div>
+    <div class="clr"></div>
+    <!--------------------------------------->
+
+    <!-----------------Asection---------------------->
+    <div class="asection"></div>
+    <!--------------------------------------->
+
+    <!-----------------cardsection---------------------->
+    <div class="cardsection fl box1"></div>
+    <div class="cardsection fr box2"></div>
+    <div class="clr"></div>
+    <!--------------------------------------->
+
+    <!---------------Footer section------------------------>
+    <div class="footer"><h1>Footer</h1></div>
+    <!--------------------------------------->
+  </body>
+</html>
