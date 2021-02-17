@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        height: 400px;
+        width: 23.25%;
+        background-color: red;
+        float: left;
+        margin-left: 1%;
+      }
+
+      @media (max-width: 800px) {
+        .box {
+          width: 48%;
+          margin-top: 10px;
+          float: none;
+        }
+        .fl {
+          float: left;
+        }
+        .fr {
+          float: right;
+        }
+      }
+      @media (max-width: 600px) {
+        .box {
+          width: auto;
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box fl"></div>
+    <div class="box fr"></div>
+    <div class="box fl"></div>
+    <div class="box fr"></div>
+  </body>
+</html>

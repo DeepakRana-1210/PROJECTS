@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC+-/W#C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+</body>
+</html>
+
+DTD = document type defination
+
+loose.dtd = 
+
+
+1= transition (=)
+2= strict(= not working)
+3= frame set(video, audio, frame,
+
+
+
+meta = data about data
+
+seo = search enging optimization
+
+
+------------------------------------------------------------------------------------
+html5shiv
+
+code here
+
+<!-----[if lt IE 9]>
+<scrit src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shov.js"></script>
+<![endif]---->
+-----------------------------------------------------------------------------------
+semantic elements = elements with a meaning
+
+what are semantic elements
+
+a sementc element clearly describe its meaning to bith th brawerrs and the developrer
+
+examples of non- sementric elemants : <div> and <span> - tells nothing about its content
+
+exapmle of sementric elements: <form>/ <table>, <article>-celarly defines its content.  
+
+
+
+min-height
+
+

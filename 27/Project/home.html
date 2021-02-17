@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.671);
+      }
+
+      /*********************************container***********************************/
+      .container {
+        height: 800px;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        padding-top: 1%;
+        box-shadow: 3px 3px 5px 6px rgba(172, 168, 168, 0.158);
+        margin-top: 10px;
+      }
+      .container h1 {
+        font-size: 50px;
+      }
+      .container p {
+        padding: 2% 1%;
+      }
+      .imagecontainer {
+        height: 550px;
+        width: 45%;
+        margin-top: 50px;
+      }
+      .textcontainer {
+        height: 550px;
+        width: 55%;
+        margin-top: 50px;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      #bigtext {
+        font-size: 150px;
+        color: goldenrod;
+        margin-top: 120px;
+      }
+      .para {
+        font-size: 20px;
+        padding: 1% 0%;
+        line-height: 0.6;
+      }
+      #btn {
+        padding: 2%;
+        margin-top: 30px;
+        background-color: rgba(128, 128, 128, 0.384);
+        color: rgb(17, 16, 16);
+      }
+      #btn:hover {
+        background-color: aqua;
+      }
+      /*********************************container1***********************************/
+      .container1 {
+        height: 1000px;
+        width: 100%;
+        background-color: lightcoral;
+        text-align: center;
+        background-image: url(Images/2.jpg);
+        background-size: 100% 100%;
+        margin-top: 50px;
+      }
+      #text1 {
+        font-size: 80px;
+        color: whitesmoke;
+      }
+      #text2 {
+        font-size: 20px;
+        color: whitesmoke;
+      }
+      #text3 {
+        font-size: 200px;
+        color: whitesmoke;
+      }
+      #text4 {
+        font-size: 40px;
+        color: whitesmoke;
+      }
+      #text5 {
+        font-size: 20px;
+        color: whitesmoke;
+      }
+      .btn1 {
+        padding: 1%;
+        background-color: lightgreen;
+      }
+      .btn1:hover {
+        background-color: rgba(148, 130, 130, 0.24);
+        color: whitesmoke;
+        border: 1px solid whitesmoke;
+      }
+      .hellodiv {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.616);
+        padding-top: 250px;
+      }
+      /******************************container2**************************************************/
+      .container2 {
+        height: 100vh;
+        width: 100%;
+        background-color: lightblue;
+        text-align: center;
+        font-family: sans-serif;
+        background-image: url(Images/3.jpg);
+        background-size: 100% 120%;
+        margin-top: 50px;
+      }
+      #text11 {
+        font-size: 150px;
+        color: rgba(245, 245, 245, 0.822);
+      }
+      #text12 {
+        font-size: 30px;
+        color: rgba(245, 245, 245, 0.822);
+      }
+      .text13 {
+        font-size: 20px;
+        color: rgba(245, 245, 245, 0.822);
+      }
+      .hellodiv2 {
+        height: 100%;
+        width: 100%;
+        padding-top: 410px;
+      }
+      .btn2 {
+        padding: 1%;
+        border: 4px solid black;
+        border-radius: 5px;
+        border-radius: 120px;
+      }
+      .btn2:hover {
+        background-color: cornflowerblue;
+      }
+      /*************************container3******************************************************/
+      .container3 {
+        height: 100vh;
+        width: 100%;
+        background-color: lightblue;
+        text-align: center;
+        padding-top: 100px;
+        margin-top: 50px;
+      }
+      #text21 {
+        font-size: 50px;
+      }
+      #text22 {
+        font-size: 300px;
+        margin-top: 50px;
+      }
+      #text23 {
+        font-size: 40px;
+      }
+      #text24 {
+        font-size: 20px;
+        margin-top: 180px;
+      }
+      #btn3 {
+        padding: 1%;
+        margin-top: 50px;
+        background-color: rgba(240, 128, 128, 0.548);
+        color: whitesmoke;
+        font-weight: 700;
+      }
+      #btn3:hover {
+        background-color: royalblue;
+      }
+      /***************************************container4********************************************/
+      .container4 {
+        height: 100vh;
+        width: 100%;
+        background-color: lightblue;
+        margin-top: 50px;
+        text-align: center;
+        font-family: sans-serif;
+        background-image: url(Images/4.jpg);
+        background-size: 100% 100%;
+      }
+      #text41 {
+        color: white;
+        font-size: 60px;
+        letter-spacing: 5px;
+      }
+      #text42 {
+        font-size: 200px;
+        color: white;
+        padding: 50px 0px 50px 0px;
+      }
+      #text43 {
+        color: white;
+        font-size: 60px;
+      }
+      #text44 {
+        color: white;
+        font-size: 30px;
+        margin-top: 30px;
+      }
+      #text45 {
+        color: white;
+        font-size: 30px;
+        margin-top: 30px;
+      }
+      #text46 {
+        font-size: 25px;
+        color: white;
+        margin-top: 30px;
+      }
+      #btn4 {
+        margin-top: 30px;
+        color: white;
+        padding: 1% 2%;
+        background-color: rgba(212, 57, 57, 0.582);
+        border-radius: 100px;
+        border: 5px solid royalblue;
+      }
+      #btn4:hover {
+        background-color: royalblue;
+        border: 5px solid whitesmoke;
+        color: whitesmoke;
+      }
+      .helldiv11 {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.082);
+        width: 100%;
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-------------------------container---------------------------------------->
+    <div class="container">
+      <h1>Travel Error Page</h1>
+      <div class="imagecontainer fl">
+        <img src="Images/1.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="textcontainer fr">
+        <h1 id="bigtext">404</h1>
+        <p class="para">Page Not Found</p>
+        <p class="para">The page you requested could not found</p>
+        <button id="btn">Back To Home</button>
+      </div>
+      <div class="clr"></div>
+      <br /><br />
+      <p>© 2019 Travel Error Page. All rights reserved | Design by W3layouts</p>
+    </div>
+
+    <!-------------------------container1---------------------------------------->
+    <div class="container1">
+      <div class="hellodiv">
+        <h1 id="text1">Oops!</h1>
+        <br /><br />
+        <p id="text2">It looks like you have taken a wrong turn.</p>
+        <br />
+        <h1 id="text3">404</h1>
+        <p id="text4">PAGE NOT FOUND</p>
+        <br /><br /><br />
+        <button class="btn1">Subscribe</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn1">Back to Home</button><br /><br /><br /><br />
+        <p id="text5">
+          © 2020 Track Error Page. All rights reserved | Design by W3Layouts
+        </p>
+      </div>
+    </div>
+    <!------------------------------container2------------------------------------------>
+    <div class="container2">
+      <div class="hellodiv2">
+        <h1 id="text11">SORRY</h1>
+        <br /><br />
+        <h2 id="text12">Looks like you're lost...</h2>
+        <br /><br />
+        <p class="text13">
+          You can either return to the previous page, visit our homepage or
+        </p>
+        <br />
+        <p class="text13">contact our support team.</p>
+        <br /><br />
+        <button class="btn2">GO TO HOMEPAGE</button>
+        <button class="btn2">CONTACT US</button><br /><br />
+        <p class="text13">
+          © 2019 Pug Error Page. All rights reserved | Design by W3layouts
+        </p>
+      </div>
+    </div>
+    <!------------------------------------contaner3---------------------------------------------->
+    <div class="container3">
+      <h1 id="text21">Fixed Error</h1>
+      <h1 id="text22">404</h1>
+      <p id="text23">PAGE NOT FOUND</p>
+      <button id="btn3">Back to home</button>
+      <p id="text24">
+        © 2020 Fixed Error. All rights reserved | Design by W3layouts
+      </p>
+    </div>
+    <!------------------------------container4----------------------------------------->
+    <div class="container4">
+      <div class="helldiv11">
+        <h1 id="text41">ADORABLE ERROR PAGE</h1>
+        <h1 id="text42">404</h1>
+        <h1 id="text43">SORRY</h1>
+        <p id="text44">
+          It looks like that page no longer exist. Would you like to go to
+          homepage
+        </p>
+        <p id="text45">or</p>
+        <br />
+        <button id="btn4">Contact</button>
+        <br />
+        <p id="text46">
+          © 2018 Adorable Error Page. All Rights Reserved | Design by W3layouts
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

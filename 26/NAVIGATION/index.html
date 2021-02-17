@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hello").click(function () {
+          $(".navigation").toggle(100);
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        height: 80px;
+        width: 100%;
+        background-color: royalblue;
+        position: relative;
+      }
+      .logo {
+        height: 80px;
+        width: 400px;
+        position: absolute;
+        line-height: 2.2;
+        font-weight: 700;
+        color: whitesmoke;
+        left: 5%;
+      }
+      nav {
+        height: 80px;
+        width: 60%;
+        position: absolute;
+        right: 100px;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+      }
+      nav ul li a {
+        text-decoration: none;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        padding: 2% 2%;
+        line-height: 5;
+        color: black;
+        font-weight: 700;
+        border-radius: 30%;
+      }
+      .navigation {
+        height: 50px;
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.685);
+      }
+      .navigation ul {
+        list-style-type: none;
+      }
+      .navigation ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .navigation ul li a {
+        text-decoration: none;
+        padding: 0.6% 1%;
+
+        font-weight: 700;
+        color: whitesmoke;
+        line-height: 3.1;
+      }
+      .bodysection {
+        height: 800px;
+        width: 100%;
+        background-image: url(3.jpg);
+        background-color: lightblue;
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+      }
+      #bigtext {
+        color: whitesmoke;
+        text-align: center;
+        line-height: 10;
+        text-shadow: 1px 1px 1px black;
+      }
+      #hello {
+        display: none;
+      }
+
+      @media (max-width: 1200px) {
+        header {
+          background-color: white;
+        }
+        header h1 {
+          color: black;
+        }
+        nav ul li a {
+          color: black;
+        }
+        .icon {
+          color: blue;
+        }
+        .bodysection {
+          background-image: url(1.jpg);
+        }
+        #bigtext {
+          background-color: rgba(255, 255, 0, 0.164);
+          color: whitesmoke;
+          font-size: 30px;
+        }
+      }
+      @media (max-width: 800px) {
+        .navigation ul li {
+          display: block;
+          margin-left: 40px;
+        }
+        .navigation {
+          display: none;
+        }
+        #hello {
+          display: block;
+          padding: 1%;
+          background-color: lightcoral;
+          border-radius: 10px;
+          color: whitesmoke;
+          font-weight: 700;
+        }
+        nav {
+          right: 0px;
+        }
+        .logo h1 {
+          font-size: 20px;
+          line-height: 4;
+        }
+        .navigation ul li a {
+          color: black;
+        }
+        #bigtext {
+          line-height: 2;
+        }
+      } ;
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><h1>&gt;_Start Web Development</h1></div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Register Now</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <button id="hello">navigation</button>
+
+    <br />
+    <div class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Document</a></li>
+        <li><a href="#">Workspace</a></li>
+        <li><a href="#">Project Blog</a></li>
+        <li><a href="#">Portfolio</a></li>
+      </ul>
+    </div>
+    <div class="bodysection"></div>
+  </body>
+</html>

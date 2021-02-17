@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 400px;
+        width: 18.5%;
+        background-color: red;
+        float: left;
+        margin-left: 1%;
+      }
+      @media (max-width: 800px) {
+        .box {
+          width: 49%;
+          float: left;
+          margin-top: 10px;
+        }
+        .new {
+          width: 100%;
+        }
+      }
+      @media (max-width: 600px) {
+        .box {
+          height: 300px;
+          width: 100%;
+        }
+        .nn {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"><h1>1</h1></div>
+    <div class="box"><h1>2</h1></div>
+    <div class="box new"><h1>3</h1></div>
+    <div class="box nn"><h1>4</h1></div>
+    <div class="box nn"><h1>5</h1></div>
+  </body>
+</html>
