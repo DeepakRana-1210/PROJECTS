@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .clr {
+        clear: both;
+      }
+      .header {
+        height: 50px;
+        width: 100%;
+        background-color: whitesmoke;
+      }
+      .link {
+        height: 50px;
+        width: 33.33%;
+        background-color: red;
+        border-right: 1px solid green;
+      }
+      .main {
+        position: relative;
+      }
+
+      .hello {
+        margin-left: 220px;
+        margin-top: 5px;
+      }
+      .searchbox {
+        position: absolute;
+        top: 10px;
+        right: 100px;
+        height: 30px;
+        width: 40%;
+        padding-left: 5%;
+      }
+      .loogo {
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 35px;
+      }
+      .logos {
+        height: 34px;
+        width: 100%;
+        background-color: green;
+      }
+      .divliink {
+        height: 15px;
+        width: 100%;
+        background-color: yellow;
+      }
+      .divliink ul {
+        list-style-type: none;
+      }
+      .divliink ul li {
+        display: inline;
+      }
+      .divliink ul li a {
+        padding: 0% 3%;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      .logos ul {
+        list-style-type: none;
+      }
+      .logos ul li {
+        display: inline;
+      }
+      .logos ul li a {
+        padding: 0% 4.4%;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="link main fl">
+        <form action="">
+          <img
+            src="Images/heart-icon-y1k.png"
+            alt=""
+            height="40px"
+            class="hello"
+            width="40px"
+          />
+          <input
+            type="search"
+            class="searchbox"
+            name="search"
+            placeholder="Search"
+            id=""
+          />
+          <i class="fas fa-search loogo"></i>
+        </form>
+      </div>
+      <div class="link fl">
+        <div class="logos">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-home fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-hospital-user fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-home fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-home fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                >&nbsp;&nbsp;&nbsp;<i class="fas fa-home heman fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-home heman fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="divliink">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Network</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Messaging</a></li>
+            <li><a href="#">Notificication</a></li>
+            <li>
+              <a href="#">Me<i class="fas fa-sort-down"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="link fr"></div>
+      <div class="clr"></div>
+    </div>
+  </body>
+</html>

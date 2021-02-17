@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .fl {
+        float: left;
+        margin-left: 4%;
+      }
+      .fr {
+        float: right;
+        margin-right: 4%;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .header {
+        height: 53px;
+        width: 100%;
+        position: relative;
+        background-color: red;
+      }
+      .logo {
+        height: 53px;
+        margin-left: 100px;
+        width: 100px;
+        position: absolute;
+        background-image: url(Images/heart-icon-y1k.png);
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+      }
+      .search {
+        height: 53px;
+        margin-left: 100px;
+        width: 350px;
+        position: absolute;
+        left: 110px;
+      }
+      .nav {
+        width: 65%;
+        position: absolute;
+        right: 100px;
+        height: 53px;
+        background-color: yellow;
+        top: 0px;
+      }
+      .nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      .nav ul li {
+        display: inline;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        font-weight: 700;
+        padding: 0% 2.5%;
+        margin-top: 10px;
+        background-color: cadetblue;
+      }
+      .nav ul li a a {
+        border: grey;
+      }
+
+      .searchbtn {
+        height: 35px;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 20%;
+      }
+      .loogo {
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 50px;
+      }
+      .hello {
+        position: absolute;
+        margin-left: 50px;
+        padding: 1.5% 0% 0% 1.5%;
+      }
+      .card {
+        height: 400px;
+        width: 30%;
+        background-color: chartreuse;
+        margin-top: 50px;
+        border-radius: 10px;
+      }
+
+      .b1:hover {
+        height: 420px;
+        width: 31%;
+        background-color: coral;
+        transition: 0.5s;
+      }
+      .b2:hover {
+        height: 420px;
+        width: 31%;
+        background-color: coral;
+        transition: 0.5s;
+      }
+      .b3:hover {
+        height: 420px;
+        width: 31%;
+        background-color: coral;
+        transition: 0.5s;
+      }
+      #text {
+        padding: 1% 0% 0% 0%;
+        text-align: center;
+        opacity: 0.8;
+        font-weight: 700;
+        margin-top: 10px;
+      }
+      a {
+        color: blue;
+      }
+      a:hover {
+        color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <div class="search">
+        <form method="POST" action="">
+          <p>
+            <i class="fas fa-user loogo"></i
+            ><input
+              type="search"
+              name=""
+              class="searchbtn"
+              id=""
+              placeholder="Search"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fas fa-user fa-2x hello"></i><a href="#">Home</a></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-hospital-user fa-2x hello"></i
+              ><a href="#">Home</a></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-briefcase fa-2x hello"></i
+              ><a href="#">Home</a></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-envelope-square fa-2x hello"></i
+              ><a href="#">Home</a></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-bell fa-2x hello"></i><a href="#">Home</a></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-user fa-2x hello"></i><a href="#">Home</a></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-th fa-2x hello"></i><a href="#">Home</a></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p id="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+      laboriosam quibusdam asperiores repellendus. Similique a, modi
+      reprehenderit iure est sunt corporis ipsum culpa, aperiam dolorem corrupti
+      hic consequuntur harum totam?
+    </p>
+    <div class="card fl b1"></div>
+    <div class="card new b2"></div>
+    <div class="card fr b3"></div>
+  </body>
+</html>
