@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg1 {
+        color: red;
+      }
+      .bg2 {
+        color: yellow;
+      }
+      .bg3 {
+        color: yellowgreen;
+      }
+      .bg4 {
+        color: pink;
+      }
+      .bg5 {
+        color: skyblue;
+      }
+      .bg6 {
+        color: green;
+      }
+      .bg7 {
+        color: orange;
+      }
+      .bg8 {
+        color: teal;
+      }
+      .bg9 {
+        color: tomato;
+      }
+      .bg10 {
+        color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      /*****************if else function****************/
+      let data = 1;
+      if (data == 1) {
+        document.write("hello");
+      } else if (data == 2) {
+        document.write("india");
+      } else {
+        document.write("not soppourt");
+      }
+
+      /************switch function****************/
+      document.write("<br><hr>");
+
+      let hello = 1;
+      switch (hello) {
+        case 1:
+          document.write("this");
+          break;
+        case 2:
+          document.write("is");
+          break;
+        case 3:
+          document.write("for");
+          break;
+        case 4:
+          document.write("fun");
+          break;
+        default:
+          document.write("byee byee");
+          break;
+      }
+
+      /*******************while loop function************************/
+      document.write("<br><hr>");
+
+      let abcdata = 1;
+      while (abcdata <= 10) {
+        document.write(`<p class="bg${abcdata}">hello my name is deepak</p>`);
+        abcdata++;
+      }
+
+      /*******************do while loop function************************/
+      document.write("<br><hr>");
+
+      let game = 5;
+      do {
+        document.write(`<h1 class="bg${game}">${game}hello</h1>`);
+        game--;
+      } while (game >= 1);
+    </script>
+  </body>
+</html>

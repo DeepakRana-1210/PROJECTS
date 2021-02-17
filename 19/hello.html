@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#t1").click(function () {
+          $("#hello").hide(500);
+          $("#byy").hide(500);
+        });
+        $("#t2").click(function () {
+          $("#hello").slideToggle(500);
+          $("#byy").hide(500);
+        });
+        $("#t3").click(function () {
+          $("#hello").hide(500);
+          $("#byy").slideToggle(500);
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        height: 60px;
+        width: 100%;
+        background-color: yellow;
+        position: relative;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .logo {
+        height: 60px;
+        width: 200px;
+        background-color: red;
+        position: absolute;
+        left: 10%;
+      }
+      .nav {
+        height: 60px;
+        width: 70%;
+        position: absolute;
+        right: 0px;
+      }
+      .nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin-right: 50px;
+      }
+      .nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        padding: 1% 2%;
+        background-color: brown;
+        line-height: 3.6;
+        font-weight: 700;
+      }
+      .nav ul li a:hover {
+        background-color: chartreuse;
+      }
+      .login {
+        display: none;
+        background-color: red;
+        height: 500px;
+        width: 40%;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 700;
+        padding-top: 100px;
+      }
+      .ides {
+        margin-top: 30px;
+        border-radius: 4px;
+        padding-left: 4%;
+        height: 50px;
+        width: 60%;
+      }
+
+      #loginbtn {
+        margin-top: 30px;
+        height: 30px;
+        width: 30%;
+        background-color: chartreuse;
+      }
+      .register {
+        display: none;
+        height: 500px;
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        background-color: chocolate;
+        margin-top: 20px;
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <div class="nav">
+        <ul>
+          <li><a id="t1" href="#">NONE</a></li>
+          <li><a id="t2" href="#">LOGIN</a></li>
+          <li><a id="t3" href="#">REGISTER</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="hello" class="login">
+      <form action="" method="POST">
+        <p>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Enter Your Email"
+            id=""
+            class="ides"
+          />
+        </p>
+        <p>
+          <input
+            type="password"
+            name="pass"
+            required
+            placeholder="Enter Your Password"
+            id=""
+            class="ides"
+          />
+        </p>
+        <p><input type="submit" value="Login" id="loginbtn" /></p>
+      </form>
+    </div>
+    <div id="byy" class="register">
+      <form action="" method="POST">
+        <p>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Enter Your Email"
+            id=""
+            class="ides"
+          />
+        </p>
+        <p>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Enter Your Email"
+            id=""
+            class="ides"
+          />
+        </p>
+        <p>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Enter Your Email"
+            id=""
+            class="ides"
+          />
+        </p>
+        <p>
+          <input
+            type="password"
+            name="pass"
+            required
+            placeholder="Enter Your Password"
+            id=""
+            class="ides"
+          />
+        </p>
+        <p><input type="submit" value="Login" id="loginbtn" /></p>
+      </form>
+    </div>
+  </body>
+</html>

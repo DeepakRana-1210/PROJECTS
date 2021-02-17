@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mainbox {
+        height: 550px;
+        width: 50%;
+        background-color: yellowgreen;
+        margin: auto;
+        margin-top: 50px;
+        position: relative;
+      }
+      .imagecontainer {
+        height: 350px;
+        width: 80%;
+        background-color: yellow;
+        position: absolute;
+        left: 10%;
+        top: 25px;
+      }
+      .miniimages {
+        height: 130px;
+        width: 15%;
+        background-color: yellowgreen;
+        position: absolute;
+      }
+      .bor {
+        border-radius: 10px;
+      }
+      .b1 {
+        bottom: 10px;
+        left: 10%;
+      }
+      .b2 {
+        bottom: 10px;
+        right: 10%;
+      }
+      .b3 {
+        bottom: 10px;
+        left: 42.5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainbox">
+      <div
+        onclick="document.getElementById('demo').src='Images/1.jfif'"
+        class="miniimages b1"
+      >
+        <img
+          src="Images/1.jfif"
+          alt=""
+          width="100%"
+          height="100%"
+          class="bor"
+        />
+      </div>
+      <div
+        onclick="document.getElementById('demo').src='Images/22.jpg'"
+        class="miniimages b2"
+      >
+        <img
+          src="Images/22.jpg"
+          alt=""
+          height="100%"
+          width="100%"
+          class="bor"
+        />
+      </div>
+      <div
+        onclick="document.getElementById('demo').src='Images/3.png'"
+        class="miniimages b3"
+      >
+        <img src="Images/3.png" height="100%" width="100%" alt="" class="bor" />
+      </div>
+
+      <div class="imagecontainer">
+        <img
+          id="demo"
+          src="Images/1.jfif"
+          height="100%"
+          width="100%"
+          alt=""
+          class="bor"
+        />
+      </div>
+    </div>
+  </body>
+</html>

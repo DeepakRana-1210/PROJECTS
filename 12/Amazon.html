@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .mianbox {
+        height: 600px;
+        width: 60%;
+        background-color: aqua;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .container1 {
+        height: 500px;
+        width: 20%;
+        background-color: yellow;
+        margin-top: 50px;
+        margin-left: 10%;
+        border-radius: 10px 0px 0px 10px;
+      }
+      .container2 {
+        height: 500px;
+        width: 60%;
+        margin-top: 50px;
+        border-radius: 0px 10px 10px 0px;
+      }
+      .hee {
+        border-radius: 0px 10px 10px 0px;
+      }
+      .minidiv {
+        height: 100px;
+        width: 100px;
+        background-color: yellowgreen;
+        margin-top: 50px;
+        margin-left: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mianbox">
+      <div class="container1 fl">
+        <div
+          onclick="document.getElementById('hello1').src='Images/1.jfif'"
+          class="minidiv"
+        >
+          <img src="Images/1.jfif" alt="" height="100%" width="100%" />
+        </div>
+        <div
+          onclick="document.getElementById('hello1').src='Images/22.jpg'"
+          class="minidiv"
+        >
+          <img src="Images/22.jpg" height="100%" width="100%" alt="" />
+        </div>
+        <div
+          onclick="document.getElementById('hello1').src='Images/3.png'"
+          class="minidiv"
+        >
+          <img src="Images/3.png" height="100%" width="100%" alt="" />
+        </div>
+      </div>
+
+      <div class="container2 fl">
+        <img
+          id="hello1"
+          src="Images/1.jfif"
+          hiegh
+          alt=""
+          height="100%"
+          width="100%"
+          class="hee"
+        />
+      </div>
+
+      <div class="clr"></div>
+    </div>
+  </body>
+</html>

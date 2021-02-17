@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .mainbox {
+        height: 400px;
+        background-color: yellow;
+        overflow: hidden;
+      }
+      #image {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainbox">
+      <img id="image" src="Images/2.jpg" alt="" />
+    </div>
+    <button onclick="he25()">25%</button>
+    <button onclick="he60()">60%</button>
+    <button onclick="he100()">100%</button>
+
+    <script>
+      function he25() {
+        document.getElementById("image").style.width = "25%";
+      }
+      function he60() {
+        document.getElementById("image").style.width = "60%";
+      }
+      function he100() {
+        document.getElementById("image").style.width = "100%";
+      }
+    </script>
+  </body>
+</html>

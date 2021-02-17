@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        display: inline;
+      }
+      p {
+        text-align: center;
+        background-color: wheat;
+      }
+      .bg1 {
+        background-color: antiquewhite;
+      }
+      .bg2 {
+        background-color: aqua;
+      }
+      .bg3 {
+        background-color: violet;
+      }
+      .bg4 {
+        background-color: blue;
+      }
+      .bg5 {
+        background-color: blueviolet;
+      }
+      .bg6 {
+        background-color: brown;
+      }
+      .bg7 {
+        background-color: cadetblue;
+      }
+      .bg8 {
+        background-color: chartreuse;
+      }
+      .bg9 {
+        background-color: cornflowerblue;
+      }
+      .bg10 {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>for loop</h1>");
+      document.write("<br><br>");
+      let titlee = "This is the title";
+      let paraa = "This is the para";
+      for (let a = 1; a <= 10; a++) {
+        document.write(titlee + paraa);
+        document.write("<hr>");
+      }
+
+      document.write("<h1>for loop with loop ${a}</h1>");
+      document.write("<br><br>");
+      let titlea = "<h1>This is the title</h1>";
+      let parae = "<p>This is the para</p>";
+      for (let a = 1; a <= 10; a++) {
+        document.write(titlea + parae);
+        document.write(`<h1 class="bg${a}">hello my name is deepak</h1>`);
+        document.write("<hr>");
+      }
+
+      document.write("<h1>for in loop</h1>");
+      document.write("<br><br>");
+      let arrey = ["hello1", "hello2", "hello3", "hello4", "hello5"];
+      for (let data in arrey) {
+        document.write(arrey[data]);
+        document.write("<hr>");
+      }
+
+      document.write("<h1>for of loop</h1>");
+      document.write("<br><br>");
+      let title = "this is the new title";
+      document.write(title);
+      document.write("<hr>");
+      for (let data of title) {
+        document.write(data);
+        document.write("<hr>");
+      }
+    </script>
+  </body>
+</html>

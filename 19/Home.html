@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#l1").click(function () {
+          $(".l1").slideToggle(500);
+          $(".l2").slideUp(500);
+          $(".l3").slideUp(500);
+          $(".l4").slideUp(500);
+          $(".l5").slideUp(500);
+          $(".l6").slideUp(500);
+        });
+        $("#l2").click(function () {
+          $(".l1").slideUp(500);
+          $(".l2").slideToggle(500);
+          $(".l3").slideUp(500);
+          $(".l4").slideUp(500);
+          $(".l5").slideUp(500);
+          $(".l6").slideUp(500);
+        });
+        $("#l3").click(function () {
+          $(".l1").slideUp(500);
+          $(".l2").slideUp(500);
+          $(".l3").slideToggle(500);
+          $(".l4").slideUp(500);
+          $(".l5").slideUp(500);
+          $(".l6").slideUp(500);
+        });
+        $("#l4").click(function () {
+          $(".l1").slideUp(500);
+          $(".l2").slideUp(500);
+          $(".l3").slideUp(500);
+          $(".l4").slideToggle(500);
+          $(".l5").slideUp(500);
+          $(".l6").slideUp(500);
+        });
+        $("#l5").click(function () {
+          $(".l1").slideUp(500);
+          $(".l2").slideUp(500);
+          $(".l3").slideUp(500);
+          $(".l4").slideUp(500);
+          $(".l5").slideToggle(500);
+          $(".l6").slideUp(500);
+        });
+        $("#l6").click(function () {
+          $(".l1").slideUp(500);
+          $(".l2").slideUp(500);
+          $(".l3").slideUp(500);
+          $(".l4").slideUp(500);
+          $(".l5").slideUp(500);
+          $(".l6").slideToggle(500);
+        });
+        $("#bann").click(function () {
+          $(".l1").slideUp(500);
+          $(".l2").slideUp(500);
+          $(".l3").slideUp(500);
+          $(".l4").slideUp(500);
+          $(".l5").slideUp(500);
+          $(".l6").slideUp(500);
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .clr {
+        clear: both;
+      }
+      header {
+        height: 60px;
+        width: 100%;
+        background-color: red;
+        position: relative;
+        box-shadow: 1px 1px 1px 1px #ccc;
+      }
+      nav {
+        height: 60px;
+        width: 80%;
+        background-color: yellow;
+        position: absolute;
+        right: 0px;
+        padding-right: 2%;
+      }
+      .links {
+        text-align: center;
+        line-height: 2.2;
+        color: whitesmoke;
+        text-shadow: 2px 2px 2px black;
+        height: 60px;
+        width: 10%;
+        background-color: blue;
+        float: right;
+        margin-left: 1%;
+      }
+      .mainlink {
+        height: 300px;
+        display: none;
+        text-align: center;
+        width: 8%;
+        position: absolute;
+        top: 62px;
+      }
+      .mainlink h1 {
+        padding: 1%;
+        background-color: red;
+        margin-top: 4px;
+        border: 1px solid yellow;
+        box-shadow: 1px 1px 1px 1px #ccc;
+      }
+      .l1 {
+        right: 2%;
+      }
+      .l2 {
+        right: 10.8%;
+      }
+      .l3 {
+        right: 19.6%;
+      }
+      .l4 {
+        right: 28.4%;
+      }
+      .l5 {
+        right: 37.2%;
+      }
+      .l6 {
+        right: 46%;
+      }
+      .banner {
+        height: 500px;
+        width: 100%;
+        background-color: teal;
+        margin-top: 2px;
+        box-shadow: 1px 1px 1px 1px #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="l1" class="links"><h1>Home</h1></div>
+        <div id="l2" class="links"><h1>Home</h1></div>
+        <div id="l3" class="links"><h1>Home</h1></div>
+        <div id="l4" class="links"><h1>Home</h1></div>
+        <div id="l5" class="links"><h1>Home</h1></div>
+        <div id="l6" class="links"><h1>Home</h1></div>
+      </nav>
+      <div class="clr"></div>
+      <div class="mainlink l1">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+      </div>
+      <div class="mainlink l2">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+      </div>
+      <div class="mainlink l3">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+      </div>
+      <div class="mainlink l4">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+      </div>
+      <div class="mainlink l5">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+      </div>
+      <div class="mainlink l6">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+      </div>
+      <div class="clr"></div>
+    </header>
+    <div id="bann" class="banner"></div>
+  </body>
+</html>

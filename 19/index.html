@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#t1").click(function () {
+          $("#div1").slideToggle();
+          $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+          $("#div9").hide();
+        });
+        $("#t2").click(function () {
+          $("#div1").hide();
+          $("#div2").slideToggle();
+          $("#div3").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+          $("#div9").hide();
+        });
+        $("#t3").click(function () {
+          $("#div1").hide();
+          $("#div2").hide();
+          $("#div3").slideToggle();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+          $("#div9").hide();
+        });
+        $("#t4").click(function () {
+          $("#div1").hide();
+          $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").slideToggle();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+          $("#div9").hide();
+        });
+        $("#t5").click(function () {
+          $("#div1").hide();
+          $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+          $("#div5").slideToggle();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+          $("#div9").hide();
+        });
+        $("#t6").click(function () {
+          $("#div1").hide();
+          $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").slideToggle();
+          $("#div7").hide();
+          $("#div8").hide();
+          $("#div9").hide();
+        });
+        $("#t7").click(function () {
+          $("#div1").hide();
+          $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").slideToggle();
+          $("#div8").hide();
+          $("#div9").hide();
+        });
+        $("#t8").click(function () {
+          $("#div1").hide();
+          $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").slideToggle();
+          $("#div9").hide();
+        });
+        $("#t9").click(function () {
+          $("#div1").hide();
+          $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+          $("#div9").slideToggle();
+        });
+      });
+    </script>
+    <style>
+      * {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        box-shadow: 3px 3px 5px 6px #ccc;
+        height: 60px;
+        width: 100%;
+        background-color: red;
+        position: relative;
+      }
+      .logo {
+        height: 60px;
+        width: 200px;
+        background-color: aqua;
+        position: absolute;
+        left: 10%;
+      }
+      .nav {
+        height: 60px;
+        width: 80%;
+        background-color: blueviolet;
+        position: absolute;
+        right: 0px;
+      }
+      .nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin-right: 20px;
+      }
+      .nav ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+      .nav ul li a {
+        font-weight: 700;
+        background-color: chartreuse;
+        padding: 1.5% 3%;
+        line-height: 3.6;
+        width: 10%;
+      }
+
+      .link {
+        position: absolute;
+        width: 6.88%;
+        display: none;
+        margin-top: 5px;
+        text-align: center;
+      }
+      .link h2 {
+        background-color: red;
+        margin-top: 10px;
+        padding: 10%;
+      }
+      .bb1 {
+        right: 1.05%;
+      }
+      .bb2 {
+        right: 9.15%;
+      }
+      .bb3 {
+        right: 17.265%;
+      }
+      .bb4 {
+        right: 25.35%;
+      }
+      .bb5 {
+        right: 33.467%;
+      }
+      .bb6 {
+        right: 41.6%;
+      }
+      .bb7 {
+        right: 49.75%;
+      }
+      .bb8 {
+        right: 57.85%;
+      }
+      .bb9 {
+        right: 65.95%;
+      }
+      .helll {
+        height: 500px;
+        width: 100%;
+        background-color: pink;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <div class="nav">
+        <ul>
+          <li><a id="t1" href="#">Home</a></li>
+          <li><a id="t2" href="#">Home</a></li>
+          <li><a id="t3" href="#">Home</a></li>
+          <li><a id="t4" href="#">Home</a></li>
+          <li><a id="t5" href="#">Home</a></li>
+          <li><a id="t6" href="#">Home</a></li>
+          <li><a id="t7" href="#">Home</a></li>
+          <li><a id="t8" href="#">Home</a></li>
+          <li><a id="t9" href="#">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="linkholder">
+      <div id="div9" class="link bb1">
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+      </div>
+
+      <div id="div8" class="link bb2">
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+      </div>
+
+      <div id="div7" class="link bb3">
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+      </div>
+
+      <div id="div6" class="link bb4">
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+      </div>
+
+      <div id="div5" class="link bb5">
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+      </div>
+
+      <div id="div4" class="link bb6">
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+      </div>
+
+      <div id="div3" class="link bb7">
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+      </div>
+
+      <div id="div2" class="link bb8">
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+      </div>
+
+      <div id="div1" class="link bb9">
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+        <h2>hello</h2>
+      </div>
+    </div>
+    <div class="helll"></div>
+  </body>
+</html>

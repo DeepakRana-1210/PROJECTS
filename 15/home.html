@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        height: 60px;
+        width: 100%;
+        background-color: yellow;
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .logo {
+        height: 60px;
+        width: 30%;
+        background-color: blue;
+        position: absolute;
+      }
+      .logo h1 {
+        text-align: center;
+        line-height: 1.6;
+        color: white;
+      }
+      .nav {
+        height: 60px;
+        width: 70%;
+        position: absolute;
+        right: 0px;
+      }
+      .nav ul {
+        text-align: right;
+        list-style-type: none;
+        margin-right: 30px;
+      }
+      .nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        line-height: 3;
+        font-size: 20px;
+        padding: 1% 2%;
+        background-color: yellow;
+      }
+      .nav ul li a:hover {
+        background-color: blueviolet;
+      }
+
+      .box {
+        height: 400px;
+        width: 23.75%;
+        float: left;
+        margin-left: 1%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        margin-bottom: 3%;
+      }
+      #imghe {
+        height: 100%;
+        width: 100%;
+      }
+      .bg1 {
+        background-color: yellow;
+      }
+      .bg2 {
+        background-color: green;
+      }
+      .bg3 {
+        background-color: hotpink;
+      }
+      .bg4 {
+        background-color: indigo;
+      }
+      .bg5 {
+        background-color: lightblue;
+      }
+
+      .footer {
+        height: 50px;
+        width: 100%;
+        background-color: lightcoral;
+        position: absolute;
+        bottom: 0px;
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><h1>Header</h1></div>
+      <div class="nav">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#">home</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      let a = 1;
+      while (a <= 12) {
+        document.write(
+          `<div class="box bg${a}"><img id="imghe" src="Images/img${a}-min.jpg"></div>`
+        );
+        a++;
+      }
+    </script>
+
+    <div class="footer"></div>
+  </body>
+</html>

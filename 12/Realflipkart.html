@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        height: 56px;
+        width: 100%;
+        background-color: rgb(108, 108, 231);
+        font-size: 12px;
+        line-height: 0.8;
+      }
+      .link {
+        height: 56px;
+        width: 12%;
+        float: left;
+        text-align: right;
+      }
+      h3 {
+        font-size: 30px;
+        line-height: 1;
+      }
+      .mar {
+        margin-left: 10%;
+      }
+      #searchbox {
+        height: 35px;
+        width: 90%;
+        text-align: center;
+        margin-top: 7.5px;
+      }
+      #loginbtn {
+        height: 35px;
+        padding: 0% 25%;
+        margin-top: 7.5px;
+        background-color: lightblue;
+      }
+      #loginbtn:hover {
+        background-color: yellowgreen;
+      }
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        color: whitesmoke;
+        font-weight: 700;
+        text-shadow: 1px 1px 1px black;
+      }
+      .paadd {
+        padding-top: 15px;
+        text-align: left;
+        margin-left: 30px;
+      }
+      .big {
+        width: 30%;
+      }
+
+      .container {
+        height: 400px;
+        width: 80%;
+        background-color: hotpink;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .btn {
+        height: 40px;
+        padding: 1% 1%;
+        line-height: 0.2;
+        margin-top: 20px;
+        margin-left: 15px;
+        font-weight: 700;
+        background-color: hotpink;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="link mar">
+        <h3>Flipkart</h3>
+        <br />Explore Plue+
+      </div>
+
+      <div class="link big">
+        <form action="" method="POST">
+          <p>
+            <input
+              type="search"
+              name=""
+              id="searchbox"
+              placeholder="Search for products/ brands/ more"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div class="link">
+        <button id="loginbtn">Login</button>
+      </div>
+
+      <div class="link paadd"><a href="#">More</a></div>
+
+      <div class="link paadd"><a href="#">Cart</a></div>
+    </div>
+
+    <div class="container">
+      <img id="main1" src="Images/1.jpg" height="100%" width="100%" alt="" />
+    </div>
+    <center>
+      <button class="btn" onclick="myfunction1()">Baccground 1</button>
+      <button class="btn" onclick="myfunction2()">Baccground 2</button>
+      <button class="btn" onclick="myfunction3()">Baccground 3</button>
+      <button class="btn" onclick="myfunction4()">Baccground 4</button>
+      <button class="btn" onclick="myfunction5()">Baccground 5</button>
+      <button class="btn" onclick="myfunction6()">Baccground 6</button>
+      <button class="btn" onclick="myfunction7()">Baccground 7</button>
+      <button class="btn" onclick="myfunction8()">Baccground 8</button>
+      <button class="btn" onclick="myfunction9()">Baccground 9</button>
+      <button class="btn" onclick="myfunction10()">Baccground 10</button>
+    </center>
+
+    <script>
+      function myfunction1() {
+        document.getElementById("main1").src = "Images/1.jpg";
+      }
+
+      function myfunction2() {
+        document.getElementById("main1").src = "Images/2.jpg";
+      }
+
+      function myfunction3() {
+        document.getElementById("main1").src = "Images/3.jpg";
+      }
+
+      function myfunction4() {
+        document.getElementById("main1").src = "Images/4.jpg";
+      }
+
+      function myfunction5() {
+        document.getElementById("main1").src = "Images/5.jpg";
+      }
+
+      function myfunction6() {
+        document.getElementById("main1").src = "Images/6.jpg";
+      }
+
+      function myfunction7() {
+        document.getElementById("main1").src = "Images/7.jpg";
+      }
+
+      function myfunction8() {
+        document.getElementById("main1").src = "Images/8.jpg";
+      }
+
+      function myfunction9() {
+        document.getElementById("main1").src = "Images/9.jpg";
+      }
+
+      function myfunction10() {
+        document.getElementById("main1").src = "Images/10.jpg";
+      }
+    </script>
+  </body>
+</html>

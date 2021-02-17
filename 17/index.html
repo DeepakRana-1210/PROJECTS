@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .header {
+        height: 60px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .logo {
+        height: 60px;
+        width: 200px;
+        background-color: crimson;
+        position: absolute;
+        left: 5%;
+      }
+      .nav {
+        height: 60px;
+        width: 70%;
+        position: absolute;
+        right: 5%;
+      }
+      .nav ul {
+        text-align: right;
+        list-style-type: none;
+        margin-right: 30px;
+      }
+      .nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .nav ul li a {
+        background-color: yellowgreen;
+        padding: 1% 2%;
+        line-height: 3.7;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        border: 2px solid red;
+      }
+      .nav ul li a:hover {
+        background-color: lightblue;
+      }
+
+      .male,
+      .female,
+      .baby {
+        width: 100%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        display: flex;
+      }
+      .bg1 {
+        background-color: blue;
+      }
+      .bg2 {
+        background-color: brown;
+      }
+      .bg3 {
+        background-color: chartreuse;
+      }
+
+      .box {
+        height: 250px;
+        width: 33.33%;
+        background-color: cornsilk;
+        margin: 1%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <div class="nav">
+        <ul>
+          <li><a onclick="allme()" href="#">ALL</a></li>
+          <li><a onclick="male()" href="#">MEN</a></li>
+          <li><a onclick="female()" href="#">WOMEN</a></li>
+          <li><a onclick="baby()" href="#">BABY</a></li>
+          <li><a onclick="none()" href="#">NONE</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="male" class="male bg1">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div id="female" class="female bg2">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div id="baby" class="baby bg3">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <script>
+      function allme() {
+        document.getElementById("male").style.display = "flex";
+        document.getElementById("female").style.display = "flex";
+        document.getElementById("baby").style.display = "flex";
+      }
+
+      function male() {
+        document.getElementById("male").style.display = "flex";
+        document.getElementById("female").style.display = "none";
+        document.getElementById("baby").style.display = "none";
+      }
+
+      function female() {
+        document.getElementById("male").style.display = "none";
+        document.getElementById("female").style.display = "flex";
+        document.getElementById("baby").style.display = "none";
+      }
+
+      function baby() {
+        document.getElementById("male").style.display = "none";
+        document.getElementById("female").style.display = "none";
+        document.getElementById("baby").style.display = "flex";
+      }
+
+      function none() {
+        document.getElementById("male").style.display = "none";
+        document.getElementById("female").style.display = "none";
+        document.getElementById("baby").style.display = "none";
+      }
+
+      let a = 1;
+      while (a <= 3) {
+        document.getElementById("img").src = "IMAGES/${a}.jpg";
+      }
+    </script>
+  </body>
+</html>

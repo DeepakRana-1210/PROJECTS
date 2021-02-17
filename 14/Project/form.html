@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        height: 60px;
+        width: 100%;
+        background-color: yellowgreen;
+        position: relative;
+      }
+      .nav {
+        height: 60px;
+        width: 70%;
+        background-color: violet;
+        position: absolute;
+        right: 0px;
+      }
+      .nav ul {
+        text-align: right;
+        margin-right: 100px;
+      }
+      .nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        line-height: 3;
+        padding: 1% 3%;
+        background-color: wheat;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .nav ul li a:hover {
+        background-color: turquoise;
+        border-bottom: 5px solid red;
+      }
+
+      .hello1 {
+        height: 300px;
+        width: 30%;
+        background-color: yellow;
+        padding-top: 70px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        display: none;
+        position: absolute;
+        left: 35%;
+        margin-top: 20px;
+      }
+      .hello1 p {
+        text-align: center;
+      }
+      .hell {
+        height: 40px;
+        width: 70%;
+        border-radius: 5px;
+      }
+      .loginbtn {
+        height: 30px;
+        width: 30%;
+        background-color: lightblue;
+        font-weight: 700;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .loginbtn:hover {
+        background-color: rebeccapurple;
+        color: white;
+      }
+
+      .hello2 {
+        height: 300px;
+        width: 30%;
+        background-color: yellow;
+        padding-top: 30px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        display: none;
+        position: absolute;
+        left: 35%;
+        margin-top: 20px;
+      }
+      .hello2 p {
+        text-align: center;
+      }
+      .hell {
+        height: 40px;
+        width: 70%;
+        border-radius: 5px;
+      }
+      .loginbtn {
+        height: 30px;
+        width: 30%;
+        background-color: lightblue;
+        font-weight: 700;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .loginbtn:hover {
+        background-color: rebeccapurple;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <ul>
+          <li><a onclick="hell()" href="#">Home</a></li>
+          <li><a onclick="hel1()" href="#">Login</a></li>
+          <li><a onclick="hel2()" href="#">Register</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hello1" id="heman">
+      <form action="" method="POST">
+        <p>
+          <input
+            class="hell"
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required
+            id=""
+          />
+        </p>
+        <br />
+        <p>
+          <input
+            class="hell"
+            type="password"
+            name="pass"
+            placeholder="Enter Your Pasword"
+            required
+            id=""
+          />
+        </p>
+        <br />
+        <p><input class="loginbtn" type="submit" value="Login" /></p>
+      </form>
+    </div>
+    <div class="hello2" id="heman2">
+      <form action="" method="POST">
+        <p>
+          <input
+            class="hell"
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required
+            id=""
+          />
+        </p>
+        <br />
+        <p>
+          <input
+            class="hell"
+            type="number"
+            name="email"
+            placeholder="Enter Mobile Number"
+            required
+            id=""
+          />
+        </p>
+        <br />
+        <p>
+          <input type="radio" name="gender" id="" />Male&nbsp;&nbsp;<input
+            type="radio"
+            name="gender"
+            id=""
+          />Female
+        </p>
+        <br />
+        <p>
+          <input
+            class="hell"
+            type="password"
+            name="pass"
+            placeholder="Enter New Pasword"
+            required
+            id=""
+          />
+        </p>
+        <br />
+        <p><input class="loginbtn" type="submit" value="Register" /></p>
+      </form>
+    </div>
+    <script>
+      function hell() {
+        document.getElementById("heman").style.display = "none";
+        document.getElementById("heman2").style.display = "none";
+      }
+      function hel1() {
+        document.getElementById("heman2").style.display = "none";
+        document.getElementById("heman").style.display = "block";
+      }
+
+      function hel2() {
+        document.getElementById("heman").style.display = "none";
+        document.getElementById("heman2").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        line-height: 2;
+        font-weight: 700;
+      }
+      .clr {
+        clear: both;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+
+      /***************************color section start****************************/
+      .mainbox {
+        width: 50%;
+        height: 751px;
+        margin-top: 10px;
+      }
+      .bg1 {
+        background-color: aquamarine;
+      }
+      .bg2 {
+        background-color: blueviolet;
+      }
+
+      .window {
+        width: 24.25%;
+      }
+      .subbox {
+        height: 80px;
+        background-color: red;
+        margin-bottom: 10px;
+      }
+
+      .textcolor {
+        height: 263px;
+        width: 24.25%;
+      }
+      .col {
+        height: 58.2px;
+        background-color: yellowgreen;
+        margin-bottom: 10px;
+      }
+
+      #demoo {
+        font-size: 50px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      .he1 {
+        background-color: IndianRed;
+      }
+      .he2 {
+        background-color: Crimson;
+      }
+      .he3 {
+        background-color: HotPink;
+      }
+      .he4 {
+        background-color: LightSalmon;
+      }
+
+      .he5 {
+        background-color: Orange;
+      }
+      .he6 {
+        background-color: Gold;
+      }
+      .he7 {
+        background-color: Fuchsia;
+      }
+      .he8 {
+        background-color: Purple;
+      }
+
+      .he9 {
+        background-color: Chartreuse;
+      }
+      .he10 {
+        background-color: LightSeaGreen;
+      }
+      .he11 {
+        background-color: yellow;
+      }
+      .he12 {
+        background-color: LightSkyBlue;
+      }
+
+      .he13 {
+        background-color: BurlyWood;
+      }
+      .he14 {
+        background-color: Peru;
+      }
+      .he15 {
+        background-color: DarkSlateGray;
+      }
+      .he16 {
+        background-color: Cornsilk;
+      }
+      /***************************color section end****************************/
+
+      /*************************card section start********************************/
+      .carddesign {
+        height: 400px;
+        width: 80%;
+        background-color: aqua;
+        margin: auto;
+        margin-top: 60px;
+        position: relative;
+        border-radius: 15px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .maintext1 {
+        font-size: 28px;
+        font-weight: 700;
+        text-shadow: 1px 1px 1px red;
+        color: whitesmoke;
+        position: absolute;
+        right: 400px;
+        top: 175px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      #imaggg {
+        position: absolute;
+        left: 10px;
+        top: 140px;
+      }
+
+      /*************************card section end********************************/
+    </style>
+  </head>
+  <body>
+    <div class="mainbox fl bg1">
+      <h1>Backgroung Colour Changing</h1>
+      <div class="window fl">
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='IndianRed'"
+          class="subbox he1"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='Crimson'"
+          class="subbox he2"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='HotPink'"
+          class="subbox he3"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='LightSalmon'"
+          class="subbox he4"
+        ></div>
+      </div>
+
+      <div class="window new">
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='Orange'"
+          class="subbox he5"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='Gold'"
+          class="subbox he6"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='Fuchsia'"
+          class="subbox he7"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='Purple'"
+          class="subbox he8"
+        ></div>
+      </div>
+
+      <div class="window new">
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='Chartreuse'"
+          class="subbox he9"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='LightSeaGreen'"
+          class="subbox he10"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='yellow'"
+          class="subbox he11"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='LightSkyBlue'"
+          class="subbox he12"
+        ></div>
+      </div>
+
+      <div class="window fr">
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='BurlyWood'"
+          class="subbox he13"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='Peru'"
+          class="subbox he14"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='DarkSlateGray'"
+          class="subbox he15"
+        ></div>
+        <div
+          onclick="document.getElementById('demo').style.backgroundColor='Cornsilk'"
+          class="subbox he16"
+        ></div>
+      </div>
+
+      <h1>Text Color Changing</h1>
+
+      <div class="textcolor fl">
+        <div
+          onclick="document.getElementById('helloo').style.color='IndianRed'"
+          class="col he1"
+        ></div>
+        <div
+          onclick="document.getElementById('helloo1').style.color='Crimson'"
+          class="col he2"
+        ></div>
+        <div
+          onclick="document.getElementById('helloo2').style.color='HotPink'"
+          class="col he3"
+        ></div>
+        <div
+          onclick="document.getElementById('helloo3').style.color='LightSalmon'"
+          class="col he4"
+        ></div>
+      </div>
+
+      <div class="textcolor new">
+        <div
+          onclick="document.getElementById('maintext').style.color='Orange'"
+          class="col he5"
+        ></div>
+        <div
+          onclick="document.getElementById('helloo4').style.color='Gold'"
+          class="col he6"
+        ></div>
+        <div
+          onclick="document.getElementById('helloo4').style.color='Fuchsia'"
+          class="col he7"
+        ></div>
+        <div
+          onclick="document.getElementById('maintext').style.color='Purple'"
+          class="col he8"
+        ></div>
+      </div>
+
+      <div class="textcolor new">
+        <div
+          onclick="document.getElementById('maintext').style.color='Chartreuse'"
+          class="col he9"
+        ></div>
+        <div
+          onclick="document.getElementById('maintext').style.color='LightSeaGreen'"
+          class="col he10"
+        ></div>
+        <div
+          onclick="document.getElementById('maintext').style.color='yellow'"
+          class="col he11"
+        ></div>
+        <div
+          onclick="document.getElementById('maintext').style.color='LightSkyBlue'"
+          class="col he12"
+        ></div>
+      </div>
+
+      <div class="textcolor fr">
+        <div
+          onclick="document.getElementById('maintext').style.color='BurlyWood'"
+          class="col he13"
+        ></div>
+        <div
+          onclick="document.getElementById('maintext').style.color='Peru'"
+          class="col he14"
+        ></div>
+        <div
+          onclick="document.getElementById('maintext').style.color='DarkSlateGray'"
+          class="col he15"
+        ></div>
+        <div
+          onclick="document.getElementById('maintext').style.color='Cornsilk'"
+          class="col he16"
+        ></div>
+      </div>
+    </div>
+    <!---------------card design code start---------------->
+    <div class="mainbox fr bg2">
+      <h1 id="demoo">Card design</h1>
+      <hr />
+
+      <div class="carddesign" id="demo">
+        <table height="100%" width="100%">
+          <tr>
+            <td width="50%" rowspan="4">
+              <img
+                id="imaggg"
+                src="Images/blogger.png"
+                height="30%"
+                width="20%"
+                alt=""
+              />
+              <span id="maintext" class="maintext1">Company Name</span>
+            </td>
+            <td><h1 id="helloo">Ratan Tata</h1></td>
+          </tr>
+
+          <tr>
+            <td>
+              <h1 id="helloo1">+91-019219291002</h1>
+              <h1 id="helloo2">+91-019219291002</h1>
+            </td>
+          </tr>
+
+          <tr>
+            <td><p id="helloo3">deepakranayt@gmail.com</p></td>
+          </tr>
+
+          <tr>
+            <td style="padding: 2%">
+              <p id="helloo4">
+                Address:- Star Refrigeration & Kitchen Equipments , delhi
+                address Star Refrigeration & Kitchen Equipments , delhi address
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!---------------card design code end---------------->
+    <div class="clr"></div>
+  </body>
+</html>

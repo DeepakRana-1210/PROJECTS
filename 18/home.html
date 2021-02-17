@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        padding: 1%;
+        background-color: red;
+        width: 30%;
+      }
+    </style>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("h1").click(function () {
+          $(this).hide();
+        });
+        $("button").click(function () {
+          $("h1").show();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>heading 1</h1>
+    <h1>heading 2</h1>
+    <h1>heading 3</h1>
+    <h1>heading 4</h1>
+    <h1>heading 5</h1>
+    <h1>heading 6</h1>
+    <h1>heading 7</h1>
+    <h1>heading 8</h1>
+    <h1>heading 9</h1>
+    <h1>heading 10</h1>
+    <button>Show all</button>
+  </body>
+</html>

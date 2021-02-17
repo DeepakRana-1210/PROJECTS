@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        height: 50px;
+        width: 100%;
+        background-color: yellow;
+        position: relative;
+      }
+      .nav1 {
+        height: 50px;
+        width: 50%;
+        background-color: yellowgreen;
+        position: absolute;
+        left: 0px;
+      }
+      .nav2 {
+        height: 50px;
+        width: 50%;
+        background-color: tomato;
+        position: absolute;
+        right: 0px;
+      }
+      .nav1 ul {
+        list-style-type: none;
+      }
+      .nav1 ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+      .nav1 ul li a {
+        background-color: red;
+        font-size: 20px;
+        padding: 0.5% 2%;
+        line-height: 2.5;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .nav2 ul {
+        list-style-type: none;
+        text-align: right;
+        margin-right: 50px;
+      }
+      .nav2 ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+      .nav2 ul li a {
+        background-color: yellow;
+        font-size: 20px;
+        padding: 0.5% 2%;
+        line-height: 2.5;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .bodysection {
+        height: 1000px;
+        width: 100%;
+        background-color: yellow;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-----------------------headerstrat---------------------------->
+    <div class="header">
+      <div class="nav1">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+      <div class="nav2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-----------------------headerend---------------------------->
+    <div class="bodysection">
+      <table height="1000px" width="100%" border="1">
+        <tr>
+          <td></td>
+          <td colspan="2"></td>
+        </tr>
+
+        <tr>
+          <td colspan="3"></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
