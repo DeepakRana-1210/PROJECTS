@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 8vh;
+        width: 100%;
+        background-color: lightblue;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .logo {
+        height: 8vh;
+        flex: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav {
+        height: 8vh;
+        flex: 50%;
+      }
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        height: 8vh;
+        align-items: center;
+        justify-content: space-around;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: royalblue;
+        font-weight: 700;
+      }
+      .user {
+        height: 8vh;
+        flex: 20%;
+      }
+      /************************main_container satrt***********************/
+      .main_container {
+        height: 92vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .left {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 25%;
+        height: 92vh;
+        background-color: springgreen;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: column;
+      }
+      .left a {
+        text-decoration: none;
+      }
+      .right {
+        height: 92vh;
+        flex: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .upper_section {
+        height: 45vh;
+        flex: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .lower_section {
+        height: 45vh;
+        flex: 100%;
+        background-color: violet;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .img_container {
+        flex: 30%;
+        margin: 10px 5px;
+        background-color: red;
+      }
+      .left_lowersection {
+        flex: 50%;
+        background-color: wheat;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .right_lowersection {
+        flex: 50%;
+        background-color: yellow;
+      }
+      .mainbox {
+        flex: 100%;
+        background-color: yellowgreen;
+        margin: 1%;
+      }
+      /********************************media query start*****************************************/
+      @media (max-width: 1000px) {
+        .left {
+          flex: 100%;
+          height: 8vh;
+          flex-direction: row;
+          font-size: 10px;
+        }
+        .left_lowersection {
+          height: auto;
+          flex-direction: row;
+          flex: 100%;
+          flex-wrap: wrap;
+        }
+        .right {
+          height: auto;
+        }
+        .right .img_container {
+          flex: 45%;
+          height: 40vh;
+          flex-direction: row;
+        }
+        .mainbox {
+          flex-direction: row;
+          flex: 45%;
+          height: 40vh;
+        }
+        .right_lowersection {
+          height: 10vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="logo"><h1>Company Name</h1></section>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav>
+      <section class="user">
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </section>
+    </header>
+    <section class="main_container">
+      <section class="left">
+        <h2><a href="#">Home</a></h2>
+        <h2><a href="#">Home</a></h2>
+        <h2><a href="#">Home</a></h2>
+        <h2><a href="#">Home</a></h2>
+        <h2><a href="#">Home</a></h2>
+        <h2><a href="#">Home</a></h2>
+        <h2><a href="#">Home</a></h2>
+      </section>
+      <section class="right">
+        <section class="upper_section">
+          <section class="img_container"></section>
+          <section class="img_container"></section>
+          <section class="img_container"></section>
+          <section class="img_container"></section>
+          <section class="img_container"></section>
+          <section class="img_container"></section>
+        </section>
+        <section class="lower_section">
+          <section class="left_lowersection">
+            <section class="mainbox"></section>
+            <section class="mainbox"></section>
+            <section class="mainbox"></section>
+          </section>
+          <section class="right_lowersection"></section>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
