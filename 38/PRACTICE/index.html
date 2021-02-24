@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: deepak;
+        src: url(font/NothingYouCouldDo-Regular.ttf);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+      }
+      .container {
+        height: 70vh;
+        width: 100%;
+        background-color: aqua;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+        padding-top: 1%;
+      }
+
+      /***********************mian1 satrt*******************/
+      .main1 {
+        writing-mode: vertical-lr;
+        padding-left: 44%;
+      }
+
+      /***********************mian2 satrt*******************/
+      .main2 {
+        height: 20vh;
+        font-family: deepak;
+        padding-top: 7vh;
+      }
+
+      /***********************mian3 satrt*******************/
+      .main3 {
+        height: 120vh;
+        line-height: 3;
+      }
+      #the1 {
+        transition: 1s;
+      }
+      #the1:hover {
+        transform: translate(100px, 0px);
+      }
+      #the2 {
+        transition: 1s;
+      }
+      #the2:hover {
+        transform: rotate(20deg);
+      }
+      #the3 {
+        transition: 1s;
+      }
+      #the3:hover {
+        transform: scaleX(2);
+      }
+      #the4 {
+        transition: 1s;
+      }
+      #the4:hover {
+        transform: scaleY(2);
+      }
+      #the5 {
+        transition: 1s;
+      }
+      #the5:hover {
+        transform: scale(2);
+      }
+      #the6 {
+        transition: 1s;
+      }
+      #the6:hover {
+        transform: skewX(20deg);
+      }
+      #the7 {
+        transition: 1s;
+      }
+      #the7:hover {
+        transform: skewY(20deg);
+      }
+      #the8 {
+        transition: 1s;
+      }
+      #the8:hover {
+        transform: skew(20deg);
+      }
+      #the9 {
+        transition: 1s;
+      }
+      #the9:hover {
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+      }
+
+      /***********************mian4 satrt*******************/
+      .main4 {
+        line-height: 3.5;
+      }
+      #min1 {
+        transition: 1s;
+      }
+      #min1:hover {
+        transform: rotate(360deg);
+      }
+      #min2 {
+        transition: 1s;
+      }
+      #min2:hover {
+        transform: rotateX(360deg);
+      }
+      #min3 {
+        transition: 3s;
+      }
+      #min3:hover {
+        transform: rotateY(360deg);
+      }
+      #min4 {
+        transition: 4s;
+      }
+      #min4:hover {
+        transform: rotateZ(360deg);
+      }
+
+      /***********************mian5 satrt*******************/
+      .main5 {
+        line-height: 3;
+      }
+      #hel1 {
+        transition: 1s;
+        background-color: pink;
+        display: inline;
+        padding: 1% 2%;
+      }
+      #hel1:hover {
+        padding: 1.2% 5%;
+      }
+      #hel2 {transition-timing-function: linear ;
+        transition: 1s;
+        background-color: pink;
+        display: inline;
+        padding: 1% 2%;
+      }
+      #hel2:hover {
+        padding: 1.2% 5%;
+      }
+      #hel3 {transition-timing-function: ease ;
+        transition: 1s;
+        background-color: pink;
+        display: inline;
+        padding: 1% 2%;
+      }
+      #hel3:hover {
+        padding: 1.2% 5%;
+      }
+      #hel4 {transition-timing-function: ease-out ;
+        transition: 1s;
+        background-color: pink;
+        display: inline;
+        padding: 1% 2%;
+      }
+      #hel4:hover {
+        padding: 1.2% 5%;
+      }
+      #hel5 {
+        transition-timing-function: ease-in ;
+        transition: 2s;
+        background-color: pink;
+        display: inline;
+        padding: 1% 2%;
+      }
+      #hel5:hover {
+        padding: 1.2% 5%;
+      }
+    </style>
+  </head>
+ <!------------------------------------main1 start-->
+    <section class="container main1">
+      <h1>CSS Text Effects</h1>
+      <ul>
+        <li>text-overflow</li>
+        <li>word-wrap</li>
+        <li>word-break</li>
+        <li>writing-mode</li>
+      </ul>
+    </section>
+    
+  <!------------------------------------main2 start-->
+    <section class="container main2">
+      <h1>CSS Web Fonts</h1>
+    </section>
+    
+ <!------------------------------------main3 start-->
+    <section class="container main3">
+      <h1>CSS 2D Transforms</h1>
+      <ul>
+        <li id="the1">translate()</li>
+        <li id="the2">rotate()</li>
+        <li id="the3">scaleX()</li>
+        <li id="the4">scaleY()</li>
+        <li id="the5">scale()</li>
+        <li id="the6">skewX()</li>
+        <li id="the7">skewY()</li>
+        <li id="the8">skew()</li>
+        <li id="the9">matrix()</li>
+      </ul>
+    </section>
+
+   <!------------------------------------main4 start-->
+    <section class="container main4">
+      <h1>CSS 3D Transforms</h1>
+      <ul>
+        <li id="min1">rotate()</li>
+        <li id="min2">rotateX()</li>
+        <li id="min3">rotateY()</li>
+        <li id="min4">rotateZ()</li>
+      </ul>
+    </section>
+    
+ <!------------------------------------main5 start-->
+    <section class="container main5">
+      <h1>CSS Transitions</h1>
+      <ul>
+        <li id="hel1">transition</li>
+        <br />
+        <li id="hel2">transition-delay</li>
+        <br />
+        <li id="hel3">transition-duration</li>
+        <br />
+        <li id="hel4">transition-property</li>
+        <br />
+        <li id="hel5">transition-timing-function</li>
+        <br />
+      </ul>
+    </section>
+  </body>
+</html>

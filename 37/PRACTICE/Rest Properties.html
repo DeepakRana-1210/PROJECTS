@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 500px;
+        width: 100%;
+        background-color: yellow;
+        margin-top: 50px;
+        text-align: center;
+      }
+      .container h1 {
+        font-size: 40px;
+      }
+      .main1 {
+        border-radius: 20px 200px 20px 200px;
+      }
+      .main2 {
+        border: 20px solid transparent;
+        border-image: url(images/a.png) 30 stretch;
+        background-clip: content-box;
+      }
+      .main22 {
+        border: 20px solid transparent;
+        border-image: url(images/a.png) 50% round;
+        background-clip: padding-box;
+      }
+      .main3 {
+        background-image: url(images/1.png), url(images/2.png);
+        background-size: 100% 100%, 140px;
+        background-repeat: repeat, no-repeat;
+        background-position: center, right top;
+      }
+      .main33 {
+        background-image: url(main/2.jpg), url(main/1.jpg);
+        background-size: 200px, 100% 100%;
+        background-repeat: no-repeat, repeat;
+        background-position: right, right top;
+        color: whitesmoke;
+        padding-top: 50px;
+      }
+      .main4 {
+        background-image: url(main/hello.png);
+        background-size: 100% 100vh;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+      .main5 {
+        color: whitesmoke;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        padding-top: 100px;
+      }
+      .main6 {
+        background-image: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+      .main66 {
+        background-image: repeating-radial-gradient(red, yellow 10%, green 25%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container main1">
+      <h1>CSS Rounded Corners</h1>
+    </section>
+    <section class="container main2">
+      <h1>CSS Border Images</h1>
+    </section>
+    <section class="container main22">
+      <h1>CSS Border Images</h1>
+    </section>
+    <section class="container main3">
+      <br /><br /><br /><br /><br />
+      <h1>CSS Multiple Backgrounds</h1>
+      <br />
+      <br />
+      <br />
+      <h2>
+        background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif)
+        left top repeat;
+      </h2>
+      <br /><br />
+      <h2>{back-ground : containe; cover;}</h2>
+    </section>
+    <section class="container main33">
+      <h1>CSS Multiple Backgrounds</h1>
+    </section>
+    <section class="container main4">
+      <br /><br />
+      <h1>background-clip Properties Here</h1>
+    </section>
+    <section class="container main5">
+      <h1>Text Shadow</h1>
+      <h1>box Shadow</h1>
+    </section>
+    <section class="container main6">
+      <h1>Linear Gradient Backgrounds</h1>
+    </section>
+    <section class="container main66">
+      <h1>Linear Gradient Backgrounds</h1>
+    </section>
+  </body>
+</html>

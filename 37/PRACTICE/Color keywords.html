@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 50vh;
+        width: 100%;
+        background-color: lightblue;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 1%;
+      }
+      .main1 {
+        background-color: transparent;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .main2 {
+        text-shadow: 10px 20px 20px black, -2px 2px 4px black;
+        color: pink;
+        background-color: currentColor;
+      }
+      .main3 {
+        color: red;
+      }
+      .main3 h1 {
+        border: 2px solid red;
+        display: inline;
+      }
+      #mini {
+        border: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container main1">
+      <h1>CSS Color Keywords</h1>
+      <h1>The transparent Keyword</h1>
+    </section>
+    <section class="container main2">
+      <h1>The currentcolor Keyword</h1>
+      <h2>The currentcolor Keyword</h2>
+      <h3>The currentcolor Keyword</h3>
+    </section>
+    <section class="container main3">
+      <h1>The inherit <span id="mini">Keyword</span></h1>
+    </section>
+  </body>
+</html>
